@@ -74,7 +74,7 @@ class SentMemesTableViewController: UITableViewController {
 						 numberOfRowsInSection section: Int) -> Int {
 		let sectionInfo = fetchedResultsController.sections![section]
 		return sectionInfo.numberOfObjects
-							
+		
     }
 
 	override func tableView(tableView: UITableView,
@@ -88,7 +88,8 @@ class SentMemesTableViewController: UITableViewController {
 							Meme
 	
 		cell.memedImageView.image = meme.fetchCompositeImage
-        return cell
+		
+		return cell
     }
 	
 	//MARK: - Table view delegate methods

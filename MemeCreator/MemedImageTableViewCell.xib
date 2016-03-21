@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MemeGenerator_120 copy" translatesAutoresizingMaskIntoConstraints="NO" id="cgS-sH-HL6">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TattyKKPassaic" translatesAutoresizingMaskIntoConstraints="NO" id="cgS-sH-HL6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </imageView>
@@ -42,6 +42,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="MemeGenerator_120 copy" width="120" height="120"/>
+        <image name="TattyKKPassaic" width="1121" height="1072"/>
     </resources>
 </document>
