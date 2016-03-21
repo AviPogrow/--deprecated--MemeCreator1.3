@@ -19,6 +19,7 @@ import UIKit
 import CoreData
 
 
+//to allow user to input phrase and fetch flickr images
 class Flickr: NSObject {
 	
   let apiKey = "fec2dca93ec5de19700fdd361f147f41"
