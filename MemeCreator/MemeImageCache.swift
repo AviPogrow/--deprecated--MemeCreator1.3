@@ -7,6 +7,8 @@
 //
 import UIKit
 
+
+//takes the path stored in core data and stores image in docs directory
 class MemeImageCache {
     
     private var inMemoryCache = NSCache()
