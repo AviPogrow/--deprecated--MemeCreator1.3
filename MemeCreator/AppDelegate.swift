@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 	
+	//customize color of UI components
 	func customizeAppearance() {
 		//make nav bar black and its text white
 		UINavigationBar.appearance().barTintColor = UIColor.blackColor()
