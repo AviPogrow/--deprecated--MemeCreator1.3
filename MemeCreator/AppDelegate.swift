@@ -31,14 +31,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 	
 	
-	
-	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
 		customizeAppearance()
 		return true
 	}
 
+	func importJSONSeedData() {
+    let jsonURL = NSBundle.mainBundle().URLForResource("seed", withExtension: "json")
+    let jsonData = NSData(contentsOfURL: jsonURL!)
+    
+    do {
+      let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .AllowFragments) as! NSArray
+      let entity = NSEntityDescription.entityForName("Team", inManagedObjectContext: coreDataStack.context)
+      
+      for jsonDictionary in jsonArray {
+        let teamName = jsonDictionary["teamName"] as! String
+        let zone = jsonDictionary["qualifyingZone"] as! String
+        let imageName = jsonDictionary["imageName"] as! String
+        let wins = jsonDictionary["wins"] as! NSNumber
+        
+        let team = Team(entity: entity!,
+          insertIntoManagedObjectContext: coreDataStack.context)
+        team.teamName = teamName
+        team.imageName = imageName
+        team.qualifyingZone = zone
+        team.wins = wins
+      }
+      
+      coreDataStack.saveContext()
+      print("Imported \(jsonArray.count) teams")
+      
+    } catch let error as NSError {
+      print("Error importing teams: \(error)")
+    }
+  }	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	func applicationWillResignActive(application: UIApplication) {
 		// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
 		// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
