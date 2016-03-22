@@ -82,7 +82,7 @@
 		D5D676CF1C7CDF330046638C /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
 		D5D676D21C7CE1100046638C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D5D676D41C7CF4450046638C /* MemeImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeImageCache.swift; sourceTree = "<group>"; };
-		D5E160471CA03A79009E8551 /* Seed.Json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Seed.Json; sourceTree = "<group>"; };
+		D5E160471CA03A79009E8551 /* Seed.Json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Seed.Json; path = ../MemeCreator/Seed.Json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,6 @@
 				D582BC601C8485C600D53F1A /* Functions.swift */,
 				D571E8461C8905B6001BE280 /* HudView.swift */,
 				D5D676C71C7BA3380046638C /* Meme.swift */,
-				D5E160471CA03A79009E8551 /* Seed.Json */,
 				D56853051C8670A600E32A9A /* MemeProperties.swift */,
 				D5D676D41C7CF4450046638C /* MemeImageCache.swift */,
 				D5D676CF1C7CDF330046638C /* CoreDataStackManager.swift */,
@@ -165,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				D5D676AA1C7B728C0046638C /* MemeCreatorTests.swift */,
+				D5E160471CA03A79009E8551 /* Seed.Json */,
 				D5D676AC1C7B728C0046638C /* Info.plist */,
 			);
 			path = MemeCreatorTests;
