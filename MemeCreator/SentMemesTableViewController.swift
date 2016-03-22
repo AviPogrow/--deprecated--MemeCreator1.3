@@ -30,7 +30,7 @@ class SentMemesTableViewController: UITableViewController {
 		
 		
 		performFetch()
-		print("fetchPerformed on tableViewController")
+		
 		
 		let cellNib = UINib(nibName:
 		TableViewCellIdentifiers.MemedImageTableViewCell, bundle: nil)

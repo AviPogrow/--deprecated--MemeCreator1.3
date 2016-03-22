@@ -74,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     do {
        jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .AllowFragments) as! NSArray
 		
-		print("the jsonArray is \(jsonArray)")
+		
 		
 		let entity = NSEntityDescription.entityForName("Meme", inManagedObjectContext: coreDataStackManager.managedObjectContext)
       
@@ -95,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       }
       
       coreDataStackManager.saveContext()
-      print("Imported \(jsonArray.count) teams")
+		
       
     } catch let error as NSError {
       print("Error importing memes: \(error)")
