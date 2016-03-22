@@ -1,22 +1,14 @@
-//
-//  Seed.JSON
-//  MemeCreator
-//
-//  Created by new on 3/21/16.
-//  Copyright © 2016 Avi Pogrow. All rights reserved.
-//
-//This file will provide the seed data to the app
  [
   {
-  "text": "Shabbos At Passaic",
-  "imageName": "TattyKKPassaic",
+  "imageName": "Tatty-Kinder-LaserTag",
   },
   {
-  "text": "At Chani Ester's",
-  "imageName": "TattyKinderPassaic2",
+  "imageName": "Tatty-Kinder-Passaic",
   },
   {
-  "text": "Chol Hamoed!",
-  "imageName": "TattyKinderLaserTag",
+  "imageName": "Tatty-KK-Passaic",
+ },
+ {
+  "imageName": "Gayli-Floaties",
   }
   ]
