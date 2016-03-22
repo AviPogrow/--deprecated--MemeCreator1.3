@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
 		customizeAppearance()
 		
-		importJSONSeedDataIfNeeded()
+		importJSONSeedData()
 		
 		return true
 	}
@@ -51,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	  self.coreDataStackManager.saveContext()
 	}
 	
+	var  jsonArray:NSArray!
 	
   func importJSONSeedDataIfNeeded() {
     
@@ -66,15 +67,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func importJSONSeedData() {
-    let jsonURL = NSBundle.mainBundle().URLForResource("Seed", withExtension: "Json")
+    let jsonURL = NSBundle.mainBundle().URLForResource("seed", withExtension: "json")
     let jsonData = NSData(contentsOfURL: jsonURL!)
+	
     
     do {
-      let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .AllowFragments) as! NSArray
-      let entity = NSEntityDescription.entityForName("Team", inManagedObjectContext: coreDataStackManager.managedObjectContext)
+       jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .AllowFragments) as! NSArray
+		
+		print("the jsonArray is \(jsonArray)")
+		
+		let entity = NSEntityDescription.entityForName("Meme", inManagedObjectContext: coreDataStackManager.managedObjectContext)
       
 		
-	  print("the jsonArray is \(jsonArray)")
+	
 		
 	  for jsonDictionary in jsonArray {
         let imageName = jsonDictionary["imageName"] as! String
@@ -93,7 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       print("Imported \(jsonArray.count) teams")
       
     } catch let error as NSError {
-      print("Error importing teams: \(error)")
+      print("Error importing memes: \(error)")
     }
   }
 }
