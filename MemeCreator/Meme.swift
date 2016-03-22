@@ -11,6 +11,10 @@ import CoreData
 
 class Meme: NSManagedObject {
 	
+	
+	var imageName:String = ""
+	
+	
 	//keep track if meme object has a compositeImage associated with it
 	var hasCompositeImage: Bool {
 		return compositeImageID != nil

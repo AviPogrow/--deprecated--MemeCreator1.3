@@ -31,7 +31,7 @@
 		D5D676D01C7CDF330046638C /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D676CF1C7CDF330046638C /* CoreDataStackManager.swift */; };
 		D5D676D31C7CE1100046638C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5D676D11C7CE1100046638C /* Model.xcdatamodeld */; };
 		D5D676D51C7CF4450046638C /* MemeImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D676D41C7CF4450046638C /* MemeImageCache.swift */; };
-		D5E160481CA03A79009E8551 /* seed.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E160471CA03A79009E8551 /* seed.json */; };
+		D5E160481CA03A79009E8551 /* Seed.Json in Resources */ = {isa = PBXBuildFile; fileRef = D5E160471CA03A79009E8551 /* Seed.Json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +82,7 @@
 		D5D676CF1C7CDF330046638C /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
 		D5D676D21C7CE1100046638C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D5D676D41C7CF4450046638C /* MemeImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeImageCache.swift; sourceTree = "<group>"; };
-		D5E160471CA03A79009E8551 /* seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seed.json; sourceTree = "<group>"; };
+		D5E160471CA03A79009E8551 /* Seed.Json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Seed.Json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 				D562BA7D1C8C911600CA2FC6 /* MyTabBarController.swift */,
 				D562BA7F1C8C91CF00CA2FC6 /* MyNavigationController.swift */,
 				D562BA811C8CFECD00CA2FC6 /* Launch Screen.storyboard */,
-				D5E160471CA03A79009E8551 /* seed.json */,
+				D5E160471CA03A79009E8551 /* Seed.Json */,
 			);
 			path = MemeCreator;
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 			files = (
 				D5D6769D1C7B728B0046638C /* Assets.xcassets in Resources */,
 				D555D72E1C83967B00CFFD0D /* MemedImageTableViewCell.xib in Resources */,
-				D5E160481CA03A79009E8551 /* seed.json in Resources */,
+				D5E160481CA03A79009E8551 /* Seed.Json in Resources */,
 				D562BA821C8CFECE00CA2FC6 /* Launch Screen.storyboard in Resources */,
 				D5D6769B1C7B728B0046638C /* Main.storyboard in Resources */,
 			);
