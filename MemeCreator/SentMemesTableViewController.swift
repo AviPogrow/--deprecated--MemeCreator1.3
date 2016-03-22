@@ -30,6 +30,7 @@ class SentMemesTableViewController: UITableViewController {
 		
 		
 		performFetch()
+		print("fetchPerformed on tableViewController")
 		
 		let cellNib = UINib(nibName:
 		TableViewCellIdentifiers.MemedImageTableViewCell, bundle: nil)
@@ -87,7 +88,9 @@ class SentMemesTableViewController: UITableViewController {
 		let meme = fetchedResultsController.objectAtIndexPath(indexPath) as!
 							Meme
 	
-		cell.memedImageView.image = meme.fetchCompositeImage
+		
+		cell.memedImageView.image = UIImage(named: meme.imageName!)
+		//cell.memedImageView.image = meme.fetchCompositeImage
 		
 		return cell
     }
