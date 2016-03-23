@@ -31,6 +31,7 @@ class SentMemesTableViewController: UITableViewController {
 		
 		performFetch()
 		
+		
 		let cellNib = UINib(nibName:
 		TableViewCellIdentifiers.MemedImageTableViewCell, bundle: nil)
 		
@@ -74,7 +75,7 @@ class SentMemesTableViewController: UITableViewController {
 						 numberOfRowsInSection section: Int) -> Int {
 		let sectionInfo = fetchedResultsController.sections![section]
 		return sectionInfo.numberOfObjects
-							
+		
     }
 
 	override func tableView(tableView: UITableView,
@@ -87,8 +88,11 @@ class SentMemesTableViewController: UITableViewController {
 		let meme = fetchedResultsController.objectAtIndexPath(indexPath) as!
 							Meme
 	
-		cell.memedImageView.image = meme.fetchCompositeImage
-        return cell
+		
+		cell.memedImageView.image = UIImage(named: meme.imageName!)
+		//cell.memedImageView.image = meme.fetchCompositeImage
+		
+		return cell
     }
 	
 	//MARK: - Table view delegate methods

@@ -13,4 +13,5 @@ extension Meme  {
 	@NSManaged var topField:String?
 	@NSManaged var bottomField:String?
 	@NSManaged var compositeImageID: NSNumber?
+	@NSManaged var imageName:String?
 }

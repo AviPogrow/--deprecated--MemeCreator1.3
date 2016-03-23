@@ -22,7 +22,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ba2-eL-5S8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3255" y="-878"/>
+            <point key="canvasLocation" x="-4043" y="-918"/>
         </scene>
         <!--Meme Editor-->
         <scene sceneID="Tyb-i0-pJj">
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nor-Mg-AXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1508" y="-865"/>
+            <point key="canvasLocation" x="-2450" y="-913"/>
         </scene>
         <!--Sent Memes Table View Controller-->
         <scene sceneID="Yvl-LK-tYp">
@@ -124,7 +124,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xI9-ag-Cce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2292" y="-878"/>
+            <point key="canvasLocation" x="-3216" y="-935"/>
         </scene>
         <!--Memes Detail View Controller-->
         <scene sceneID="Pxi-DT-1OQ">
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xy5-1b-Fsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2345" y="483"/>
+            <point key="canvasLocation" x="-2805" y="-222"/>
         </scene>
         <!--My Navigation Controller-->
         <scene sceneID="9DB-l1-1nI">
@@ -190,7 +190,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmB-Sp-SNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2678" y="-865"/>
+            <point key="canvasLocation" x="-3634" y="-935"/>
         </scene>
         <!--Sent Memes Collection View Controller-->
         <scene sceneID="fHA-9h-Haq">
@@ -253,7 +253,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XK8-RO-615" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2268" y="-198"/>
+            <point key="canvasLocation" x="-3228" y="-258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tKw-eP-fvN">
@@ -276,7 +276,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DG0-y1-LLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1912" y="-865"/>
+            <point key="canvasLocation" x="-2818" y="-935"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rip-GX-jTn">
@@ -299,7 +299,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ave-gg-NSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2666" y="-166"/>
+            <point key="canvasLocation" x="-3642" y="-214"/>
         </scene>
     </scenes>
     <resources>
